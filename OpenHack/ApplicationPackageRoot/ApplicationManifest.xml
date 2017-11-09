@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ApplicationManifest ApplicationTypeName="OpenHackType"
-                     ApplicationTypeVersion="2.0.0"
+                     ApplicationTypeVersion="10.0.0"
                      xmlns="http://schemas.microsoft.com/2011/01/fabric"
                      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -11,10 +11,10 @@
        should match the Name and Version attributes of the ServiceManifest element defined in the 
        ServiceManifest.xml file. -->
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="MinecraftPkg" ServiceManifestVersion="2.0.0" />
+    <ServiceManifestRef ServiceManifestName="MinecraftPkg" ServiceManifestVersion="10.0.0" />
     <Policies>
       <ContainerHostPolicies CodePackageRef="Code">
-        <RepositoryCredentials AccountName="hacker1OpenHack" Password="qiKGbNrlUtuXqHplYvfdEv0i=4gb6SBb" PasswordEncrypted="false"/>
+        <RepositoryCredentials AccountName="openhack" Password="XyK1MHHggKg9D4jyPeZt/UqR7qYVKLyg" PasswordEncrypted="false"/>
         <PortBinding ContainerPort="25565" EndpointRef="MinecraftTypeEndpoint"/>
         <PortBinding ContainerPort="25575" EndpointRef="MinecraftRcon"/>
       </ContainerHostPolicies>
